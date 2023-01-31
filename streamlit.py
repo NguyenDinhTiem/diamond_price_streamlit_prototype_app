@@ -4,7 +4,7 @@ import pandas as pd
 import base64
 #Loading up the Regression model we created
 model = xgb.XGBRegressor()
-model.load_model('xgb_model.json')
+model.load_model('xgb_model.bin')
 
 #Caching the model for faster loading
 @st.cache
