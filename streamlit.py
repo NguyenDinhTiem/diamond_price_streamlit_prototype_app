@@ -77,7 +77,7 @@ def autoplay_audio(file_path: str):
 
 autoplay_audio("FKJ - Ylang Ylang_EfgAd6iHApE.mp3")
 st.snow()
-st.title('THẦN TÀI AI-MUA KIM CƯƠNG THÔNG MINH')
+st.title('💎THẦN TÀI AI-MUA KIM CƯƠNG THÔNG MINH 💎')
 st.image('Thantai.jpeg', width =100)
 st.header('Vui lòng nhập các đặc trưng của viên kim cương bạn muốn mua:')
 carat = st.number_input('Carat Weight:', min_value=0.1, max_value=10.0, value=1.0)
