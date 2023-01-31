@@ -62,7 +62,7 @@ def predict(carat, cut, color, clarity, depth, table, x, y, z):
 
 st.snow()
 st.title('THẦN TÀI AI-MUA KIM CƯƠNG THÔNG MINH')
-st.image('Thantai.jpeg')
+st.image('Thantai.jpeg', width =100)
 st.header('Vui lòng nhập các đặc trưng của viên kim cương bạn muốn mua:')
 carat = st.number_input('Carat Weight:', min_value=0.1, max_value=10.0, value=1.0)
 cut = st.selectbox('Cut Rating:', ['Fair', 'Good', 'Very Good', 'Premium', 'Ideal'])
