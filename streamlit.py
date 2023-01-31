@@ -59,7 +59,7 @@ def predict(carat, cut, color, clarity, depth, table, x, y, z):
 
     prediction = model.predict(pd.DataFrame([[carat, cut, color, clarity, depth, table, x, y, z]], columns=['carat', 'cut', 'color', 'clarity', 'depth', 'table', 'x', 'y', 'z']))
     return prediction
-import base64
+
 
 def autoplay_audio(file_path: str):
     with open(file_path, "rb") as f:
