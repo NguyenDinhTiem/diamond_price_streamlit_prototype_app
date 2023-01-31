@@ -8,7 +8,7 @@ model.load_model('xgb_model.json')
 
 #Caching the model for faster loading
 @st.cache
-st.snow()
+
 
 # Define the prediction function
 def predict(carat, cut, color, clarity, depth, table, x, y, z):
@@ -60,7 +60,7 @@ def predict(carat, cut, color, clarity, depth, table, x, y, z):
     prediction = model.predict(pd.DataFrame([[carat, cut, color, clarity, depth, table, x, y, z]], columns=['carat', 'cut', 'color', 'clarity', 'depth', 'table', 'x', 'y', 'z']))
     return prediction
 
-
+st.snow()
 st.title('THẦN TÀI AI-MUA KIM CƯƠNG THÔNG MINH')
 st.image('Thantai.jpeg')
 st.header('Vui lòng nhập các đặc trưng của viên kim cương bạn muốn mua:')
